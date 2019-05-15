@@ -1,0 +1,86 @@
+main {overflow: hidden;}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+p {font-size: 15px;}
+
+h1,
+h2,
+h3,
+b,
+strong {
+  font-weight: 600;
+  margin: 0 !important;
+}
+
+h1 {font-size: 24px;}
+
+h2 {
+  color: $blue-dark;
+  font-size: 20px;
+  @media (max-width: 991px) {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  color: $blue-dark;
+  font-size: 15px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  padding: 8px 7px;
+}
+
+figure {
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+section {
+  padding-left: 20px !important;
+}
+
+.relative {position: relative;}
+.bg-green {background: $green-light !important;}
+.bg-green-dark {background: $green-dark !important;}
+.color-green {color: $green-dark !important;}
+.border-green {border-color: $green-dark !important;}
+.border-none {border: none !important;}
+
+.hidden {display: none;}
+
+.m-b-15 {margin-bottom: 15px !important;}
+.m-b-20 {margin-bottom: 20px !important;}
+
+mark, mark.current {
+  background: orange;
+  color: black;
+}
+
+.col-1 {
+  display: flex;
+  align-items: center;
+  padding-right: 0 !important;
+  a {
+    font-weight: 300;
+  }
+}

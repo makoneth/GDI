@@ -1,0 +1,193 @@
+aside {
+  padding-top: 50px;
+  background: $grey;
+  position: relative;
+
+  .aside-full-color {
+    position: absolute;
+    background: $grey;
+    top: 0;
+    right: 0;
+    width: 900px;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.input-button {
+  position: relative;
+  margin-bottom: 9px;
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    height: 100%;
+    border: 0;
+    border-top: 1px solid $blue;
+    border-right: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    border-radius: 0 4px 4px 0;
+    background: $btn-back;
+  }
+}
+
+.aside-section {
+  margin-bottom: 20px;
+  p {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+nav {
+  position: relative;
+  ul {
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      padding-left: 10px;
+      // &:hover {
+      //   background: white;
+      //   border-left: 4px solid $blue;
+      //   padding-left: 4.5px;
+      // }
+    }
+  }
+}
+
+.active {
+  background: white;
+  border-left: 4px solid $blue;
+  padding-left: 6px;
+
+  a {
+    font-weight: 600;
+  }
+}
+
+header {
+  padding-top: 58px;
+
+  .subheader-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    span {
+      &:first-child {
+        margin-right: 35px;
+      }
+      &:last-child {
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+.tab-section {
+  border-bottom: 2px solid $btn-back;
+  .col-6 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .input-button {
+      width: 80%;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 100%;
+  }
+
+  .active-tab {
+    a {
+      font-weight: 600;
+      border-bottom: 4px solid $blue;
+      margin-bottom: -5px;
+    }
+  }
+}
+
+.block {
+  border-bottom: 2px solid $div;
+  padding-bottom: 30px;
+
+  .content-section {
+    margin-top: 24px;
+
+    .content-section__block {
+      display: flex;
+      margin-bottom: 10px;
+
+      b, span {
+        width: 50%;
+      }
+
+      span {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.status-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 51px;
+  padding: 0 22px;
+  background: $btn-back;
+  border-left: 6px solid $div;
+}
+
+.acordeon-content {
+  padding: 22px 22px 10px;
+  background: $btn-light;
+}
+
+// Estilos para los círculos de estado de pedido
+.status-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .status-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: $grey-dark;
+    // background: $green-dark;
+    border-radius: 100%;
+    padding: 5px;
+    position: relative;
+
+    img {
+      width: 24px;
+      height: 16px;
+    }
+  }
+
+  .status-line {
+    position: absolute;
+    height: 2px;
+    background: $grey-dark;
+    // background: $green-dark;
+    width: 50px;
+    right: -43px;
+    z-index: -1;
+  }
+}
+//
